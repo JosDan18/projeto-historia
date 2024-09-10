@@ -1,11 +1,33 @@
-const avança = document.querySelectorAll('.btn-proximo');
+body {
+    background-color: #1D4221;
+    color: white;
+    font-family: "Bai Jamjuree", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    margin: o;
+}
 
-avança.forEach(button => {
-    button.addEventListener('click',function(){
-        const atual = document.querySelector('.ativo')
-        const proximoPasso = 'passo-' + this.getAttribute('data-proximo');
+button{
+    background-color: rgb(10, 224, 132);
+    color: blanchedalmond;
+    font-family: "Bai Jamjuree", sans-serif;
+}
 
-        atual.classList.remove('ativo');
-        document.getElementById(proximoPasso).classList.add('ativo');
-    })
-});
+.passo {
+    display: none;
+}
+
+.passo.ativo {
+    display: block;
+}
+
+main {
+    text-align: center;
+    max-width: 90%;
+}
+
+main {
+    max-width: 80%;
+}
